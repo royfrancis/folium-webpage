@@ -1,0 +1,26 @@
+<script>
+    // Function to insert an image into a new div and add it to the specified container
+    function insertImage() {
+        // Create the quarto-logo div
+        const quartoLogoDiv = document.createElement("div");
+        quartoLogoDiv.classList.add("quarto-logo");
+
+        // Create the image element and set its source
+        const image = document.createElement("img");
+        image.src = "assets/logos/nbis-scilifelab.svg";
+
+        // Append the image to the quarto-logo div
+        quartoLogoDiv.appendChild(image);
+
+        // Check if the quarto-title-banner div exists
+        const quartoTitleBanner = document.querySelector(".quarto-title-banner");
+
+        if (quartoTitleBanner) {
+            // Insert the quarto-logo div at the beginning of quarto-title-banner
+            quartoTitleBanner.insertBefore(quartoLogoDiv, quartoTitleBanner.firstChild);
+        }
+    }
+
+    // Call the function to insert the image when the page loads
+    window.addEventListener("load", insertImage);
+</script>
