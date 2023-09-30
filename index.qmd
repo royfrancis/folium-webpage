@@ -32,10 +32,6 @@ format:
     lightbox: 
       match: auto
 
-knitr:
-  opts_chunk:
-    results: hold
-
 execute:
   eval: true
   echo: true
