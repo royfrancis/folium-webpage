@@ -2,8 +2,8 @@
 title: "NBIS support XXXX"
 subtitle: "Project title"
 description: "Description of the project."
-date: ""
-author: ""
+date: last-modified
+author: "John Doe"
 
 format:
   html:
@@ -22,12 +22,10 @@ format:
     code-copy: true
     code-overflow: wrap
     df-print: paged
-    standalone: false
     fig-align: left
     title-block-banner: "#E9F2D1"
-    author: "John Doe"
-    date:  last-modified
     date-format: "DD-MMM-YYYY"
+    standalone: true
     embed-resources: true
     lightbox: 
       match: auto
@@ -56,13 +54,14 @@ filters:
 
 Long description of the support request.
 
----
-
 ## Methods
 ## Deliverables  
 ### Directory
 ## Practical info
 ### Software
+
+List of tools and versions or session info.
+
 ### Data responsibility
 
 The responsibility for data archiving lies with the PI of the project. We do not offer long-term storage or retrieval of data.

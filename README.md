@@ -6,12 +6,12 @@ A single page quarto html template for project reports. For a multi-page website
 
 ![](preview.png)
 
-For a demo page, see [here](https://royfrancis.github.io/minty-quarto-webpage).
+For a demo page, see [here](http://royfrancis.github.io/minty-quarto-webpage).
 
 ## Usage
 
 - Required quarto 1.2.2 or higher
-- Run in the terminal to prepare the template
+- Run in the terminal to initialise the boilerplate template
 
 ```
 quarto use template royfrancis/minty-quarto-webpage
@@ -42,6 +42,12 @@ quarto render index.qmd
 
 - Update `author: "John Doe"`
 - Use `##` as the highest level heading.
+- The output html is intended to be standalone with no child assets. To disable this set:
+
+```
+standalone: false
+embed-resources: false
+```
 
 ## Acknowledgements
 

@@ -26,4 +26,3 @@ jobs:
           branch: gh-pages
           single-commit: true
           token: ${{ secrets.TOKEN }}
-
