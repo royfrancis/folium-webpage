@@ -4,7 +4,7 @@
 
 A single page quarto html template for project reports. For a multi-page website template, see [minty-quarto-website](https://github.com/royfrancis/minty-quarto-website).
 
-![](preview.png)
+![](preview.jpg)
 
 For a demo page, see [here](http://royfrancis.github.io/minty-quarto-webpage).
 
