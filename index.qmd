@@ -1,11 +1,11 @@
 ---
-title: "NBIS support XXXX"
+title: "NBIS support {{< meta nbis.id >}}"
 subtitle: "Project title"
 description: "Description of the project."
 date: last-modified
-author: "John Doe"
+author: "{{< meta nbis.analyst.name >}}"
 nbis:
-  id: "XXXX"
+  id: "0000"
   client: 
     name: "John Doe"
     email: "john.doe@email.com"

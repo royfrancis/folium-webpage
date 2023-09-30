@@ -40,7 +40,6 @@ quarto render index.qmd
 └── index.qmd
 ```
 
-- Update `author: "John Doe"`
 - Update `nbis` meta variables
 - Use `##` as the highest level heading.
 - The output html is intended to be standalone with no child assets. To disable this set:
