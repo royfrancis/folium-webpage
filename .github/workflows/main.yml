@@ -20,8 +20,9 @@ jobs:
           to: html
           path: index.qmd
       - name: Deploy
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target: gh-pages
-          path: index.html
-          render: false
+          folder: ./index.html
+          branch: gh-pages
+          token: ${{ secrets.TOKEN }}
+
