@@ -4,6 +4,18 @@ subtitle: "Project title"
 description: "Description of the project."
 date: last-modified
 author: "John Doe"
+nbis:
+  id: "XXXX"
+  client: 
+    name: "John Doe"
+    email: "john.doe@email.com"
+    org: "Some university"
+  pi:
+    name: "John Doe"
+    email: "john.doe@email.com"
+  analyst:
+    name: "John Doe"
+    email: "john.doe@nbis.se"
 
 format:
   html:
@@ -43,11 +55,11 @@ filters:
 ---
 
 ::: {.alert .alert-secondary}
-**NBIS ID**: XXXX  
-**Request by**: John Doe (john.doe@ki.se)  
-**Principal Investigator**: John Doe (john.doe@ki.se)  
-**Organisation**: Some University  
-**NBIS Staff**: John Doe (john.doe@nbis.se)  
+**NBIS ID**: {{< meta nbis.id >}}  
+**Request by**: {{< meta nbis.client.name >}} ({{< meta nbis.client.email >}})  
+**Principal Investigator**: {{< meta nbis.pi.name >}} ({{< meta nbis.pi.email >}})  
+**Organisation**: {{< meta nbis.client.org >}}  
+**NBIS Staff**: {{< meta nbis.analyst.name >}} ({{< meta nbis.analyst.email >}})  
 :::
 
 **Support request**
