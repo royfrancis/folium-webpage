@@ -1,0 +1,7 @@
+docs/
+**/*_files
+**/*_cache
+/.luarc.json
+/.quarto/
+.DS_Store
+
