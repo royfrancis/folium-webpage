@@ -3,17 +3,17 @@ on:
   push:
     branches:
       - main
+
 jobs:
-  quarto-render-job:
-    runs-on: ubuntu-22.04
+  deploy:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
       - name: Setup quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 1.3.433
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
@@ -26,3 +26,4 @@ jobs:
           branch: gh-pages
           single-commit: true
           token: ${{ secrets.TOKEN }}
+          

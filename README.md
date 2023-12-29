@@ -1,20 +1,20 @@
-# minty <span><a href="https://github.com/royfrancis/minty-quarto-webpage"><img src="minty.png" style="height:40px;vertical-align:middle;"></a></span> 
+# folium-webpage <span><a href="https://github.com/royfrancis/folium-webpage"><img src="folium.png" style="height:40px;vertical-align:middle;"></a></span> 
 
-[![ci_badge](https://github.com/royfrancis/minty-quarto-webpage/workflows/deploy/badge.svg)](https://github.com/royfrancis/minty-quarto-webpage/actions?workflow=deploy)    [![lifecycle_badge](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![ci_badge](https://github.com/royfrancis/folium-webpage/workflows/deploy/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=deploy)    [![lifecycle_badge](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
-A single page quarto html template for project reports. For a multi-page website template, see [minty-quarto-website](https://github.com/royfrancis/minty-quarto-website).
+This is a single page quarto html template for project reports. For a multi-page website template, see [folium](https://github.com/royfrancis/folium).
 
 ![](preview.jpg)
 
-For a demo page, see [here](http://royfrancis.github.io/minty-quarto-webpage).
+For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 
 ## Usage
 
-- Required quarto 1.2.2 or higher
-- Run in the terminal to initialise the boilerplate template
+- Required quarto 1.3.4 or higher
+- To download a starter template, run in terminal:
 
 ```
-quarto use template royfrancis/minty-quarto-webpage
+quarto use template royfrancis/folium-webpage
 ```
 
 - Launch preview in the browser
@@ -57,4 +57,4 @@ embed-resources: false
 
 ---
 
-2023 • Roy Francis
+2024 • Roy Francis
