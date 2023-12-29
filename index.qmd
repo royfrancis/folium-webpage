@@ -49,10 +49,6 @@ crossref:
   tbl-labels: arabic
   title-delim: "**:**"
 
-knitr:
-  opts_chunk:
-    results: hold
-
 execute:
   eval: true
   echo: true
@@ -79,6 +75,11 @@ filters:
 Long description of the support request.
 
 ## Methods
+
+```
+This is some code
+```
+
 ## Deliverables  
 ### Directory
 ## Practical info
