@@ -17,6 +17,7 @@ jobs:
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
+	  version: 1.4.549
           to: html
           path: index.qmd
       - name: Deploy

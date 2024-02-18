@@ -19,10 +19,10 @@ nbis:
 
 format:
   html:
-    quarto-required: ">=1.3.4"
-    theme: "assets/css/custom.scss"
-    include-in-header: "assets/head.html"
-    include-after-body: "assets/logo.html"
+    quarto-required: ">=1.4.0"
+    theme: "assets/css/styles.scss"
+    include-in-header: "assets/include_head.html"
+    include-after-body: "assets/include_logo.html"
     smooth-scroll: true
     toc: true
     toc-depth: 5
@@ -39,8 +39,6 @@ format:
     date-format: "DD-MMM-YYYY"
     standalone: true
     embed-resources: true
-    lightbox: 
-      match: auto
 
 crossref:
   fig-title: "**Fig**"
@@ -58,7 +56,6 @@ execute:
 
 filters:
   - assets/custom.lua
-  - lightbox
   - fontawesome
 ---
 
@@ -110,5 +107,5 @@ If you are presenting the results in a paper, at a workshop or conference, we ki
 ---
 
 ::: {.small}
-Updated: <?lua.date?> at <?lua.time?>.
+Updated: {{< meta current_date >}} at {{< meta current_time >}}.
 :::

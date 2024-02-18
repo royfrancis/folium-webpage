@@ -10,7 +10,7 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 
 ## Usage
 
-- Required quarto 1.3.4 or higher
+- Required quarto 1.4.549 or higher
 - To download a starter template, run in terminal:
 
 ```
@@ -52,7 +52,6 @@ embed-resources: false
 ## Acknowledgements
 
 - Built using [Quarto](https://quarto.org/)
-- Uses the [lightbox extension](https://github.com/quarto-ext/lightbox) for viewing images
 - Uses the [fontawesome extension](https://github.com/quarto-ext/fontawesome) to include fontawesome icons
 
 ---
