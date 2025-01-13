@@ -56,6 +56,7 @@ execute:
 
 filters:
   - assets/custom.lua
+  - assets/fold-results.lua
   - fontawesome
 ---
 
@@ -67,9 +68,23 @@ filters:
 **NBIS Staff**: {{< meta nbis.analyst.name >}} ({{< meta nbis.analyst.email >}})  
 :::
 
+::: {.callout-note collapse="true"}
+
+## Versions
+
+**03-Oct-2024**  
+
+- First version
+
+:::
+
 **Support request**
 
 Long description of the support request.
+
+## Setup
+
+Contents
 
 ## Methods
 
@@ -77,10 +92,19 @@ Long description of the support request.
 This is some code
 ```
 
+## Summary
+
+Contents
+
+## Conclusion
+
+Content
+
 ## Deliverables  
-### Directory
-## Practical info
-### Software
+
+Contents
+
+## Session
 
 List of tools and versions or session info.
 
