@@ -11,13 +11,13 @@ jobs:
       contents: write
     steps:
       - name: Check out repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup quarto
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          version: 1.4.549
+          version: 1.6.40
           to: html
           path: index.qmd
       - name: Deploy
