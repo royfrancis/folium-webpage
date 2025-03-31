@@ -1,10 +1,10 @@
-# folium-webpage <span><a href="https://github.com/royfrancis/folium-webpage"><img src="folium.png" style="height:40px;vertical-align:middle;"></a></span> 
+# folium-webpage <span><a href="https://github.com/royfrancis/folium-webpage"><img src="assets/favicon.png" style="height:40px;vertical-align:middle;"></a></span>
 
 [![ci_badge](https://github.com/royfrancis/folium-webpage/workflows/deploy/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=deploy)    [![lifecycle_badge](https://lifecycle.r-lib.org/articles/figures/lifecycle-experimental.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 This is a single page quarto html template for project reports. For a multi-page website template, see [folium](https://github.com/royfrancis/folium).
 
-![](preview.jpg)
+![](preview.webp)
 
 For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 

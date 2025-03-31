@@ -3,10 +3,11 @@ title: "NBIS support {{< meta nbis.id >}}"
 subtitle: "Project title"
 description: "Description of the project"
 date: last-modified
+image: "assets/seo.webp"
 author: "{{< meta nbis.analyst.name >}}"
 nbis:
   id: "0000"
-  client: 
+  client:
     name: "John Doe"
     email: "john.doe@email.com"
     org: "Some university"
@@ -35,10 +36,12 @@ format:
     code-overflow: wrap
     df-print: paged
     fig-align: left
-    title-block-banner: "#E9F2D1"
+    title-block-banner: "assets/banner.png"
     date-format: "DD-MMM-YYYY"
     standalone: true
     embed-resources: true
+    open-graph: true
+    favicon: "assets/favicon.png"
 
 crossref:
   fig-title: "**Fig**"
@@ -72,7 +75,7 @@ filters:
 
 ## Versions
 
-**03-Oct-2024**  
+**03-Oct-2024**
 
 - First version
 
@@ -100,7 +103,7 @@ Contents
 
 Content
 
-## Deliverables  
+## Deliverables
 
 Contents
 
@@ -112,7 +115,7 @@ List of tools and versions or session info.
 
 The responsibility for data archiving lies with the PI of the project. We do not offer long-term storage or retrieval of data.
 
-- **NBIS & UPPNEX:** We kindly ask that you remove the files from UPPMAX/UPPNEX. The main storage at UPPNEX is optimized for high-speed and parallel access, which makes it expensive and not the right place for longer time archiving. Please consider others by not taking up the expensive space. Please note that UPPMAX is a resource separate from the Bioinformatics Platform, administered by the Swedish National Infrastructure for Computing (SNIC) and SNIC-specifc project rules apply to all projects hosted at UPPMAX. 
+- **NBIS & UPPNEX:** We kindly ask that you remove the files from UPPMAX/UPPNEX. The main storage at UPPNEX is optimized for high-speed and parallel access, which makes it expensive and not the right place for longer time archiving. Please consider others by not taking up the expensive space. Please note that UPPMAX is a resource separate from the Bioinformatics Platform, administered by the Swedish National Infrastructure for Computing (SNIC) and SNIC-specifc project rules apply to all projects hosted at UPPMAX.
 - **Sensitive data:** Please note that special considerations may apply to the human-derived legally considered sensitive personal data. These should be handled according to specific laws and regulations as outlined e.g. [here](http://nbis.se/support/human-data.html).
 - **Long-term backup:** We recommend asking your local IT for support with long-term data archiving. The [Data Office](https://www.scilifelab.se/data/) at SciLifeLab may be of help to discuss other options.
 
