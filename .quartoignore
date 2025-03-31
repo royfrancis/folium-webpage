@@ -1,0 +1,10 @@
+README.md
+.git
+.Rhistory
+preview*
+docs
+**/*_cache
+**/*_files
+demo.qmd
+assets/featured.jpg
+minty.png

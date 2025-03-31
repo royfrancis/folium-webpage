@@ -1,0 +1,135 @@
+---
+title: "NBIS support {{< meta nbis.id >}}"
+subtitle: "Project title"
+description: "Description of the project"
+date: last-modified
+author: "{{< meta nbis.analyst.name >}}"
+nbis:
+  id: "0000"
+  client:
+    name: "John Doe"
+    email: "john.doe@email.com"
+    org: "Some university"
+  pi:
+    name: "John Doe"
+    email: "john.doe@email.com"
+  analyst:
+    name: "John Doe"
+    email: "john.doe@nbis.se"
+
+format:
+  html:
+    quarto-required: ">=1.4.0"
+    theme: "assets/css/styles.scss"
+    include-in-header: "assets/include_head.html"
+    include-after-body: "assets/include_logo.html"
+    smooth-scroll: true
+    toc: true
+    toc-depth: 5
+    toc-location: right
+    number-sections: true
+    number-depth: 4
+    code-fold: true
+    code-tools: false
+    code-copy: true
+    code-overflow: wrap
+    df-print: paged
+    fig-align: left
+    title-block-banner: "assets/banner.png"
+    date-format: "DD-MMM-YYYY"
+    standalone: true
+    embed-resources: true
+
+crossref:
+  fig-title: "**Fig**"
+  fig-labels: arabic
+  tbl-title: "**Tab**"
+  tbl-labels: arabic
+  title-delim: "**:**"
+
+execute:
+  eval: true
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+
+filters:
+  - assets/custom.lua
+  - assets/fold-results.lua
+  - fontawesome
+---
+
+::: {.alert .alert-secondary}
+**NBIS ID**: {{< meta nbis.id >}}  
+**Request by**: {{< meta nbis.client.name >}} ({{< meta nbis.client.email >}})  
+**Principal Investigator**: {{< meta nbis.pi.name >}} ({{< meta nbis.pi.email >}})  
+**Organisation**: {{< meta nbis.client.org >}}  
+**NBIS Staff**: {{< meta nbis.analyst.name >}} ({{< meta nbis.analyst.email >}})  
+:::
+
+::: {.callout-note collapse="true"}
+
+## Versions
+
+**03-Oct-2024**
+
+- First version
+
+:::
+
+**Support request**
+
+Long description of the support request.
+
+## Setup
+
+Contents
+
+## Methods
+
+```
+This is some code
+```
+
+## Summary
+
+Contents
+
+## Conclusion
+
+Content
+
+## Deliverables
+
+Contents
+
+## Session
+
+List of tools and versions or session info.
+
+### Data responsibility
+
+The responsibility for data archiving lies with the PI of the project. We do not offer long-term storage or retrieval of data.
+
+- **NBIS & UPPNEX:** We kindly ask that you remove the files from UPPMAX/UPPNEX. The main storage at UPPNEX is optimized for high-speed and parallel access, which makes it expensive and not the right place for longer time archiving. Please consider others by not taking up the expensive space. Please note that UPPMAX is a resource separate from the Bioinformatics Platform, administered by the Swedish National Infrastructure for Computing (SNIC) and SNIC-specifc project rules apply to all projects hosted at UPPMAX.
+- **Sensitive data:** Please note that special considerations may apply to the human-derived legally considered sensitive personal data. These should be handled according to specific laws and regulations as outlined e.g. [here](http://nbis.se/support/human-data.html).
+- **Long-term backup:** We recommend asking your local IT for support with long-term data archiving. The [Data Office](https://www.scilifelab.se/data/) at SciLifeLab may be of help to discuss other options.
+
+### Acknowledgments
+
+If you are presenting the results in a paper, at a workshop or conference, we kindly ask you to acknowledge us.
+
+- NBIS staff are encouraged to be co-authors when this is merited in accordance to the ethical recommendations for authorship, e.g. [ICMJE recommendations](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html). If applicable, please include **Name, Surname, National Bioinformatics Infrastructure Sweden, Science for Life Laboratory, Further Affliations**, as co-author. In other cases, NBIS would be grateful if support by us is acknowledged in publications according to this example:
+
+> "Support by NBIS (National Bioinformatics Infrastructure Sweden) is gratefully acknowledged."
+
+- **UPPMAX** kindly asks you to [acknowledge UPPMAX and NAISS](https://www.uppmax.uu.se/support/faq/general-miscellaneous-faq/acknowledging-uppmax-and-naiss).
+
+- **NGI:** For publications based on data from NGI Sweden, NGI and SciLifeLab should be acknowledged. Instructions are included in the NGI reports as described [here](https://ngisweden.scilifelab.se/resources/getting-started-at-ngi/).
+
+---
+
+::: {.small}
+Updated: {{< meta current_date >}} at {{< meta current_time >}}.
+:::
