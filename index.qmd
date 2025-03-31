@@ -3,7 +3,6 @@ title: "NBIS support {{< meta nbis.id >}}"
 subtitle: "Project title"
 description: "Description of the project"
 date: last-modified
-image: "assets/seo.webp"
 author: "{{< meta nbis.analyst.name >}}"
 nbis:
   id: "0000"
@@ -40,8 +39,6 @@ format:
     date-format: "DD-MMM-YYYY"
     standalone: true
     embed-resources: true
-    open-graph: true
-    favicon: "assets/favicon.png"
 
 crossref:
   fig-title: "**Fig**"
