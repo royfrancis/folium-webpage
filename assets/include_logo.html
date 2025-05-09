@@ -1,0 +1,16 @@
+<script>
+    function insertImage() {
+        const quartoLogoDiv = document.createElement("div");
+        quartoLogoDiv.classList.add("quarto-logo");
+        const image = document.createElement("img");
+        image.src = "assets/logos/nbis-scilifelab.svg";
+        quartoLogoDiv.appendChild(image);
+        const quartoTitleBanner = document.querySelector(".quarto-title-banner");
+
+        if (quartoTitleBanner) {
+            quartoTitleBanner.insertBefore(quartoLogoDiv, quartoTitleBanner.firstChild);
+        }
+    }
+
+    window.addEventListener("load", insertImage);
+</script>
