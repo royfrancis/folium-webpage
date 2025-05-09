@@ -1,5 +1,6 @@
 name: deploy
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -17,7 +18,7 @@ jobs:
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          version: 1.6.42
+          version: 1.6.43
           to: html
           path: index.qmd
       - name: Deploy
@@ -26,5 +27,4 @@ jobs:
           folder: .
           branch: gh-pages
           single-commit: true
-          token: ${{ secrets.TOKEN }}
-          
+          token: ${{ secrets.GITHUB_TOKEN }}
