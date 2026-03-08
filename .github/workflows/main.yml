@@ -27,7 +27,7 @@ jobs:
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          version: 1.6.43
+          version: 1.8.27
           to: html
           path: index.qmd
         - name: Setup Pages
@@ -36,14 +36,6 @@ jobs:
           uses: actions/upload-pages-artifact@v3
           with:
             path: 'index.html'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4
