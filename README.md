@@ -13,41 +13,47 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 - Required quarto 1.4.549 or higher
 - To download a starter template, run in terminal:
 
-```
-quarto use template royfrancis/folium-webpage
-```
+  ```
+  quarto use template royfrancis/folium-webpage
+  ```
+
+- Install required extensions
+
+  ```
+  quarto add quarto-ext/fontawesome
+  ```
 
 - Launch preview in the browser
 
-```
-quarto preview index.qmd
-```
+  ```
+  quarto preview index.qmd
+  ```
 
 - Render
 
-```
-quarto render index.qmd
-```
+  ```
+  quarto render index.qmd
+  ```
 
 ## Tips
 
 - Template directory structure
 
-```
-.
-├── assets
-├── _extensions
-└── index.qmd
-```
+  ```
+  .
+  ├── assets
+  ├── _extensions
+  └── index.qmd
+  ```
 
 - Update `nbis` meta variables
 - Use `##` as the highest level heading.
 - The output html is intended to be standalone with no child assets. To disable this set:
 
-```
-standalone: false
-embed-resources: false
-```
+  ```
+  standalone: false
+  embed-resources: false
+  ```
 
 ## Acknowledgements
 
@@ -56,4 +62,4 @@ embed-resources: false
 
 ---
 
-2025 • Roy Francis
+2026 • Roy Francis

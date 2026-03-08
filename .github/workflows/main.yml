@@ -24,10 +24,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.8.27
+      - run: quarto --version
+      - run: quarto add --no-prompt quarto-ext/fontawesome
       - name: Render quarto
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          version: 1.8.27
           to: html
           path: index.qmd
         - name: Setup Pages
