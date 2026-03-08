@@ -10,7 +10,7 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 
 ## Usage
 
-- Required quarto 1.4.549 or higher
+- Required quarto 1.4.5 or higher
 - To download a starter template, run in terminal:
 
   ```
