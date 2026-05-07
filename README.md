@@ -10,7 +10,7 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 
 ## Usage
 
-- Required quarto 1.4.5 or higher
+- Required quarto 1.8.25 or higher
 - To download a starter template, run in terminal:
 
   ```
@@ -21,6 +21,8 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
 
   ```
   quarto add quarto-ext/fontawesome
+  quarto add mcanouil/quarto-collapse-output@1.4.0
+  quarto add royfrancis/quarto-accordion
   ```
 
 - Launch preview in the browser
