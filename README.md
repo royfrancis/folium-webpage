@@ -1,4 +1,4 @@
-# folium-webpage <span><a href="https://github.com/royfrancis/folium-webpage"><img src="assets/favicon.png" style="height:40px;vertical-align:middle;"></a></span>
+# folium-webpage <span><a href="https://github.com/royfrancis/folium-webpage"><img src="assets/favicon.png" style="height:30px;vertical-align:middle;"></a></span>
 
 [![ci_badge](https://github.com/royfrancis/folium-webpage/workflows/deploy/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=deploy)  [![linkcheck_badge](https://github.com/royfrancis/folium-webpage/workflows/linkcheck/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=linkcheck)  
 
@@ -17,12 +17,20 @@ For a demo page, see [here](http://royfrancis.github.io/folium-webpage).
   quarto use template royfrancis/folium-webpage
   ```
 
-- Install required extensions
+- Add optional extensions if needed
 
   ```
   quarto add quarto-ext/fontawesome
   quarto add mcanouil/quarto-collapse-output@1.4.0
   quarto add royfrancis/quarto-accordion
+  ```
+
+in which case, filters need to be declared in YAML front matter:
+
+  ```
+  filters:
+    - collapse-output
+    - fontawesome
   ```
 
 - Launch preview in the browser

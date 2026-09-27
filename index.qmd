@@ -3,20 +3,28 @@ title: "NBIS support {{< meta nbis.id >}}"
 subtitle: "Project title"
 description: "Description of the project"
 date: last-modified
-author: "{{< meta nbis.analyst.name >}}"
+author: "John Doe"
 nbis:
   id: "0000"
-  client:
-    name: "John Doe"
-    email: "john.doe@email.com"
-    org: "Some university"
-  pi:
-    name: "John Doe"
-    email: "john.doe@email.com"
-  analyst:
-    name: "John Doe"
-    email: "john.doe@nbis.se"
-
+  contributors:
+    - name: "Person A"
+      email: "name@nbis.se"
+      affiliation: 
+        - "NBIS"
+        - "Uppsala University"
+      roles: "NBIS Staff"
+    - name: "Person B"
+      email: "name@nbis.se"
+      affiliation: "NBIS"
+      roles: "NBIS Staff"
+    - name: "Name"
+      email: "name@email.com"
+      affiliation: "Some university"
+      roles: "User"
+    - name: "Name"
+      email: "name@email.com"
+      affiliation: "Some university"
+      roles: "Principal Investigator"
 format:
   html:
     quarto-required: ">=1.8.25"
@@ -35,10 +43,11 @@ format:
     code-overflow: wrap
     df-print: paged
     fig-align: left
-    title-block-banner: "assets/banner.png"
+    title-block-banner: "assets/images/banner.png"
     date-format: "DD-MMM-YYYY"
     standalone: true
     embed-resources: true
+    image: "assets/images/seo.webp"
 
 crossref:
   fig-title: "**Fig**"
@@ -55,16 +64,13 @@ execute:
 
 filters:
   - assets/custom.lua
-  - collapse-output
-  - fontawesome
+
+shortcodes:
+  - assets/contributors.lua
 ---
 
 ::: {.alert .alert-secondary}
-**NBIS ID**: {{< meta nbis.id >}}  
-**Request by**: {{< meta nbis.client.name >}} ({{< meta nbis.client.email >}})  
-**Principal Investigator**: {{< meta nbis.pi.name >}} ({{< meta nbis.pi.email >}})  
-**Organisation**: {{< meta nbis.client.org >}}  
-**NBIS Staff**: {{< meta nbis.analyst.name >}} ({{< meta nbis.analyst.email >}})  
+{{< contributors >}}
 :::
 
 ::: {.callout-note collapse="true"}
