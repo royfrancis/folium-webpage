@@ -2,7 +2,7 @@
 
 [![ci_badge](https://github.com/royfrancis/folium-webpage/workflows/deploy/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=deploy)  [![linkcheck_badge](https://github.com/royfrancis/folium-webpage/workflows/linkcheck/badge.svg)](https://github.com/royfrancis/folium-webpage/actions?workflow=linkcheck)  
 
-This is a single page quarto html template for project reports. For a multi-page website template, see [folium](https://github.com/royfrancis/folium).
+This is a single page quarto html template for project reports. This is part of the Folium collection. For a multi-page website template, see [folium](https://github.com/royfrancis/folium). For Typst PDF template, see [typst-folium](https://github.com/royfrancis/quarto-typst-folium).
 
 ![](preview.webp)
 
